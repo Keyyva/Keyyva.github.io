@@ -1,2 +1,37 @@
-<h1>Store#index</h1>
-<p>Find me in app/views/store/index.html.erb</p>
+<!-- Welcome page by Keyyva -->
+<% content_for :header do %>
+  <section class="hero is-warning">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Welcome
+        </h1>
+      </div>
+    </div>
+  </section>
+<% end %>
+
+
+<div class="columns">
+	<!-- Main content -->
+	<div class="column is-8">
+		<p class="f4 pt5 pl5">This demo ecommerce website was developed with Ruby on Rails. Please know that all products on this site are NOT for sale, they are simply to populate the database to show it in action. There is currently no cart feature.<br/><br/>This website was created while following the "Let's Build: With Ruby on Rails - eCommerce Music Shop" tutorial on YouTube by Web-Crunch. However, this welcome page was developed with the knowledge I've gained from this tutorial.</p>
+	
+
+		<!-- Sign in button -->
+		<% if !user_signed_in? %>
+			<%= link_to 'Sign In!', new_user_session_path, class: "button is-large is-dark mt5" %>
+		<% end %>
+
+		<!-- Browse latest products button -->
+		<%= link_to 'Browse Latest Products', products_path, class: "button is-large is-dark mt5 ml4" %>
+	</div>
+
+	<!-- Links -->
+	<div class="column is-3 is-offset-1 mt5">
+		<div class="content pa4 mt3 bg-light border-radius-3">
+			<h3><a href="https://github.com/Keyyva/VirtualGarageSale" target="_blank">Github Link</a></h3>
+			<h3><a href="https://www.youtube.com/watch?v=D5hIc_rnpaY&index=32&list=PL01nNIgQ4uxNkDZNMON-TrzDVNIk3cOz4" target="_blank">Youtube Tutorial Link</a></h3>
+		</div>
+	</div>
+</div>

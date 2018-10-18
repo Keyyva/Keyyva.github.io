@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   	registrations: 'registrations'
   }
   
-  #root 'store#index'
-  root 'products#index'
+  root 'store#index'
+  #root 'products#index'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
