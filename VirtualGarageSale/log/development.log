@@ -2892,3 +2892,22 @@ Processing by ProductsController#new as HTML
 Completed 200 OK in 266ms (Views: 235.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/products/new" for 127.0.0.1 at 2018-10-17 20:32:25 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (173.3ms)
+  Rendered products/new.html.erb within layouts/application (207.2ms)
+Completed 200 OK in 784ms (Views: 680.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2018-10-17 20:32:37 -0400
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (27.5ms)
+  Rendered products/new.html.erb within layouts/application (55.4ms)
+Completed 200 OK in 305ms (Views: 273.7ms | ActiveRecord: 0.0ms)
+
+
