@@ -1,24 +1,48 @@
-<p id="notice"><%= notice %></p>
+<!-- Original code by @justalever https://github.com/justalever/flanger -->
+<% content_for :body_class, 'bg-light' %>
 
-<p>
-  <strong>Title:</strong>
-  <%= @product.title %>
-</p>
+<section class="section product-show">
+	<div class="columns">
+		<div class="column is-8">
+			<h1 class="title is-2"><%= @product.title %></h1>
 
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
+			<ul class="pv1">
+				<% if @product.condition? %>
+					<li class="inline-block pr3"><%= @product.condition %></li>
+				<% end %>
+			</ul>
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
+			<div class="feature-image">
+			<%= image_tag(@product.image_url(:default)) %>
+			</div>
 
-<p>
-  <strong>Condition:</strong>
-  <%= @product.condition %>
-</p>
+			<div class="content pa4 mt3 bg-white border-radius-3">
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+				<h3 class="subtitle is-4">Description</h3>
+				<%= @product.description %>
+
+
+				<h3 class="subtitle is-4 pt5">Product Specs</h3>
+
+				<table class="table is-narrow">
+					<% if @product.condition %>
+						<tr>
+							<td class="has-text-weight-bold">Condition:</td>
+							<td><%= @product.condition %></td>
+						</tr>
+					<% end %>
+				</table>
+			</div>
+		</div>
+		<div class="column is-3 is-offset-1">
+			<div class="bg-white pa4 border-radius-3">
+				<h4 class="title is-5 has-text-centered"><%= number_to_currency(@product.price) %></h4>
+				<p class="has-text-centered mb4">Sold by <%= @product.user.name %></p>
+			</div>
+		</div>
+	</div>
+
+	<% if product_author(@product) %>
+		<%= link_to 'Edit', edit_product_path(@product), class: 'button' %>
+	<% end %>
+</section>
