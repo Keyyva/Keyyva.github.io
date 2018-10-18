@@ -2911,3 +2911,542 @@ Processing by ProductsController#new as HTML
 Completed 200 OK in 305ms (Views: 273.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/products/new" for 127.0.0.1 at 2018-10-17 20:49:35 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (176.5ms)
+  Rendered products/new.html.erb within layouts/application (215.5ms)
+Completed 200 OK in 1137ms (Views: 1010.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-10-17 20:50:12 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY created_at desc[0m
+  Rendered products/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 220ms (Views: 192.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-17 20:50:16 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY created_at desc[0m
+  Rendered products/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 207ms (Views: 176.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-17 20:50:18 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY created_at desc[0m
+  Rendered products/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 207ms (Views: 179.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-17 20:50:21 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY created_at desc[0m
+  Rendered products/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 209ms (Views: 179.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-17 20:50:23 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY created_at desc[0m
+  Rendered products/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 215ms (Views: 187.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-10-17 20:50:25 -0400
+Processing by RegistrationsController#edit as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 402ms (Views: 401.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-17 20:50:27 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY created_at desc[0m
+  Rendered products/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 222ms (Views: 191.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2018-10-17 20:54:07 -0400
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (18.0ms)
+  Rendered products/new.html.erb within layouts/application (47.9ms)
+Completed 200 OK in 290ms (Views: 253.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2018-10-17 20:54:11 -0400
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (17.0ms)
+  Rendered products/new.html.erb within layouts/application (46.9ms)
+Completed 200 OK in 266ms (Views: 231.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2018-10-17 20:54:13 -0400
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (19.9ms)
+  Rendered products/new.html.erb within layouts/application (46.9ms)
+Completed 200 OK in 264ms (Views: 228.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2018-10-17 20:55:39 -0400
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iSrZDTH5QWHO4RtaCtsaPKjQHCC1JjTvrZWyEmJCS6uz9PlBcwMO3b4ba/OHmEmGAmTl/RM1OybpcNO895z1Tw==", "product"=>{"title"=>"3D Crow", "price"=>"20.00", "description"=>"A crow created in Blender by yours truly!", "condition"=>"Like-new", "image"=>#<ActionDispatch::Http::UploadedFile:0xa16e818 @tempfile=#<Tempfile:C:/Users/Keyyva/AppData/Local/Temp/RackMultipart20181017-9900-1vwe76p.png>, @original_filename="Crow Preview.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"Crow Preview.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Product"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (19.0ms)
+  Rendered products/new.html.erb within layouts/application (50.8ms)
+Completed 200 OK in 1678ms (Views: 234.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2018-10-17 20:55:58 -0400
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9pMs85ifO9hGaWtXDcOkKinccflKGHpJaiH6HCq7PTwqrQuxb6qWbCTlJ8SCv+ciV77PN0xm+K3WLwM+Wpwq4w==", "product"=>{"title"=>"3D Crow", "price"=>"20.00", "description"=>"A crow created in Blender by yours truly!", "condition"=>"Like-new", "image"=>#<ActionDispatch::Http::UploadedFile:0xa320990 @tempfile=#<Tempfile:C:/Users/Keyyva/AppData/Local/Temp/RackMultipart20181017-9900-18xisuj.png>, @original_filename="Crow Preview.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"Crow Preview.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Product"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (16.0ms)
+  Rendered products/new.html.erb within layouts/application (44.9ms)
+Completed 200 OK in 1330ms (Views: 228.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2018-10-17 20:56:32 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 6ms (ActiveRecord: 0.0ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Product with 'id'=1:
+  app/controllers/products_controller.rb:68:in `set_product'
+
+Started POST "/__better_errors/2170f93906e1e603/variables" for 127.0.0.1 at 2018-10-17 20:56:32 -0400
+Started GET "/products" for 127.0.0.1 at 2018-10-17 20:56:36 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY created_at desc[0m
+  Rendered products/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 222ms (Views: 193.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2018-10-17 20:56:38 -0400
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (16.9ms)
+  Rendered products/new.html.erb within layouts/application (45.8ms)
+Completed 200 OK in 262ms (Views: 229.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2018-10-17 20:57:41 -0400
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"94on6Ju2gfXcYwOMSRZdmd0nKqlv5vrZEApPfw9OcnrNVAek2UzOSayZcyXEVQ4jd5PTdMn19RBU7y7RmpDMng==", "product"=>{"title"=>"", "price"=>"0.0", "description"=>"", "condition"=>""}, "commit"=>"Create Product"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (18.0ms)
+  Rendered products/new.html.erb within layouts/application (48.9ms)
+Completed 200 OK in 254ms (Views: 248.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2018-10-17 20:58:00 -0400
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"D8SlYgr7sH0/DmxYGa5Q2bqUfdthdoWFXlYvWzV5/yPT+oIg/c4dyV2CIMuW0hPRxPbDFWcIB2HiWNZ5RV7o/A==", "product"=>{"title"=>"help", "price"=>"12", "description"=>"ahhh", "condition"=>"Poor", "image"=>#<ActionDispatch::Http::UploadedFile:0xadd8940 @tempfile=#<Tempfile:C:/Users/Keyyva/AppData/Local/Temp/RackMultipart20181017-9900-1vf8wx.png>, @original_filename="HelpMe.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"HelpMe.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Product"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "products" ("title", "price", "description", "condition", "created_at", "updated_at", "image", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "help"], ["price", 12.0], ["description", "ahhh"], ["condition", "Poor"], ["created_at", "2018-10-18 00:58:01.333268"], ["updated_at", "2018-10-18 00:58:01.333268"], ["image", "\"HelpMe.png\""], ["user_id", 2]]
+  [1m[35m (150.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/1
+Completed 302 Found in 851ms (ActiveRecord: 151.0ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2018-10-17 20:58:01 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 224ms (Views: 192.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products/1/edit" for 127.0.0.1 at 2018-10-17 20:58:29 -0400
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (19.0ms)
+  Rendered products/edit.html.erb within layouts/application (47.9ms)
+Completed 200 OK in 267ms (Views: 237.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-17 20:58:31 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY created_at desc[0m
+  Rendered products/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 217ms (Views: 188.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2018-10-17 20:58:40 -0400
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (18.0ms)
+  Rendered products/new.html.erb within layouts/application (44.9ms)
+Completed 200 OK in 273ms (Views: 233.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2018-10-17 20:59:17 -0400
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IKjWtdTnGnqT6S/79GU+AUbIVTmcZn5yecJ35+gCTYwadvb5lh1VxuMTX1J5Jm277Hys5Dp1cbs9JxZJfdzzaA==", "product"=>{"title"=>"Crow", "price"=>"20", "description"=>"A crow created in Blender by yours truly", "condition"=>"Like-new", "image"=>#<ActionDispatch::Http::UploadedFile:0xc2b9e00 @tempfile=#<Tempfile:C:/Users/Keyyva/AppData/Local/Temp/RackMultipart20181017-9900-n0bnnu.png>, @original_filename="Crow Preview.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"Crow Preview.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Product"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "products" ("title", "price", "description", "condition", "created_at", "updated_at", "image", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Crow"], ["price", 20.0], ["description", "A crow created in Blender by yours truly"], ["condition", "Like-new"], ["created_at", "2018-10-18 00:59:18.436204"], ["updated_at", "2018-10-18 00:59:18.436204"], ["image", "\"Crow_Preview.png\""], ["user_id", 2]]
+  [1m[35m (127.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/2
+Completed 302 Found in 1178ms (ActiveRecord: 130.2ms)
+
+
+Started GET "/products/2" for 127.0.0.1 at 2018-10-17 20:59:18 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 216ms (Views: 187.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-17 20:59:26 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY created_at desc[0m
+  Rendered products/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 214ms (Views: 185.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/2" for 127.0.0.1 at 2018-10-17 20:59:30 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 211ms (Views: 179.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-17 20:59:31 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY created_at desc[0m
+  Rendered products/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 210ms (Views: 183.0ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/products/1" for 127.0.0.1 at 2018-10-17 21:00:40 -0400
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jLUVwrMOK1RttpwRO2vZaQvKno2mcg3iioR+6UU4w+ZQizKARDuG4A860IK0F5phdaggQ6AMjwY2iofLNR/UOQ==", "id"=>"1"}
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 1]]
+  [1m[35m (130.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products
+Completed 302 Found in 142ms (ActiveRecord: 131.8ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-10-17 21:00:40 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY created_at desc[0m
+  Rendered products/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 222ms (Views: 192.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/2/edit" for 127.0.0.1 at 2018-10-17 21:00:50 -0400
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (14.0ms)
+  Rendered products/edit.html.erb within layouts/application (44.4ms)
+Completed 200 OK in 266ms (Views: 233.1ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/products/2" for 127.0.0.1 at 2018-10-17 21:01:04 -0400
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hnGDkbKmEcsoQsx8UrLtw/4LX5NtVc9JklkYtr2VpUEG+9ciGtpBQpJ1165xkZ8A5pPCfhyDzn67OEu+wuC6Ng==", "product"=>{"title"=>"3D Crow", "price"=>"20.0", "description"=>"A crow created in Blender by yours truly!", "condition"=>"Like-new"}, "commit"=>"Update Product", "id"=>"2"}
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (17.0ms)
+  Rendered products/edit.html.erb within layouts/application (46.9ms)
+Completed 200 OK in 248ms (Views: 241.2ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/products/2" for 127.0.0.1 at 2018-10-17 21:01:16 -0400
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aZhhNpar4jcPOLQ8ZItRwJY1jSPdThyEeZuL1nAex1e1pkZ0YZ5Pg220+K/r9xLI6Fcz7dswnmDFlXL0ADnQiA==", "product"=>{"title"=>"3D Crow", "price"=>"20.0", "description"=>"A crow created in Blender by yours truly!", "condition"=>"Like-new", "image"=>#<ActionDispatch::Http::UploadedFile:0xc26a108 @tempfile=#<Tempfile:C:/Users/Keyyva/AppData/Local/Temp/RackMultipart20181017-9900-wli7ip.png>, @original_filename="Crow Preview.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"Crow Preview.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Product", "id"=>"2"}
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (18.0ms)
+  Rendered products/edit.html.erb within layouts/application (47.9ms)
+Completed 200 OK in 1159ms (Views: 237.1ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/products/2" for 127.0.0.1 at 2018-10-17 21:01:32 -0400
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bzSuIgWjZkgy5vHut/v60atDt6E2IIfUXVw4cKQBEUGzColg8pbL/FBqvX04h7nZ1SEJbzBeBTDhUsFS1CYGng==", "product"=>{"title"=>"3D Crow", "price"=>"20", "description"=>"A crow created in Blender by yours truly!", "condition"=>"Like-new", "image"=>#<ActionDispatch::Http::UploadedFile:0xbd5d720 @tempfile=#<Tempfile:C:/Users/Keyyva/AppData/Local/Temp/RackMultipart20181017-9900-s2mso1.png>, @original_filename="Crow Preview.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"Crow Preview.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Product", "id"=>"2"}
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "products" SET "title" = ?, "description" = ?, "updated_at" = ?, "image" = ? WHERE "products"."id" = ?[0m  [["title", "3D Crow"], ["description", "A crow created in Blender by yours truly!"], ["updated_at", "2018-10-18 01:01:33.346152"], ["image", "\"Crow_Preview.png\""], ["id", 2]]
+  [1m[35m (106.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/2
+Completed 302 Found in 848ms (ActiveRecord: 107.1ms)
+
+
+Started GET "/products/2" for 127.0.0.1 at 2018-10-17 21:01:33 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 216ms (Views: 186.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products/2/edit" for 127.0.0.1 at 2018-10-17 21:02:58 -0400
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (18.0ms)
+  Rendered products/edit.html.erb within layouts/application (47.9ms)
+Completed 200 OK in 259ms (Views: 230.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/2/edit" for 127.0.0.1 at 2018-10-17 21:03:30 -0400
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (15.0ms)
+  Rendered products/edit.html.erb within layouts/application (44.9ms)
+Completed 200 OK in 262ms (Views: 231.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-10-17 21:03:51 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY created_at desc[0m
+  Rendered products/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 230ms (Views: 200.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/2/edit" for 127.0.0.1 at 2018-10-17 21:04:41 -0400
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (17.9ms)
+  Rendered products/edit.html.erb within layouts/application (51.8ms)
+Completed 200 OK in 393ms (Views: 362.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-10-17 21:04:50 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY created_at desc[0m
+  Rendered products/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 220ms (Views: 187.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/2/edit" for 127.0.0.1 at 2018-10-17 21:05:04 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (162.1ms)
+  Rendered products/edit.html.erb within layouts/application (193.0ms)
+Completed 200 OK in 937ms (Views: 847.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-10-17 21:05:25 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY created_at desc[0m
+  Rendered products/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 234ms (Views: 205.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products/2/edit" for 127.0.0.1 at 2018-10-17 21:05:27 -0400
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (20.9ms)
+  Rendered products/edit.html.erb within layouts/application (52.9ms)
+Completed 200 OK in 277ms (Views: 242.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-10-17 21:05:35 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY created_at desc[0m
+  Rendered products/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 210ms (Views: 179.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products/2/edit" for 127.0.0.1 at 2018-10-17 21:05:37 -0400
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (21.0ms)
+  Rendered products/edit.html.erb within layouts/application (51.9ms)
+Completed 200 OK in 291ms (Views: 259.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-10-17 21:06:00 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY created_at desc[0m
+  Rendered products/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 224ms (Views: 193.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/2" for 127.0.0.1 at 2018-10-17 21:06:01 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 212ms (Views: 180.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/2/edit" for 127.0.0.1 at 2018-10-17 21:06:04 -0400
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (14.0ms)
+  Rendered products/edit.html.erb within layouts/application (45.8ms)
+Completed 200 OK in 254ms (Views: 222.4ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/products/2" for 127.0.0.1 at 2018-10-17 21:06:13 -0400
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"laMitDWfoVRqhMlsInNuDKlAhTEAZirIvglbWEQd4wMVKXYHnePx3dCz0r4BUBzPsdgY3HGwK/+XaAhQO2j8dA==", "product"=>{"title"=>"3D Crow", "price"=>"20.0", "description"=>"A crow created in Blender by yours truly!", "condition"=>"Like-new", "image"=>#<ActionDispatch::Http::UploadedFile:0xe128140 @tempfile=#<Tempfile:C:/Users/Keyyva/AppData/Local/Temp/RackMultipart20181017-12156-ee4vo7.png>, @original_filename="Crow Preview.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"Crow Preview.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Product", "id"=>"2"}
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (24.9ms)
+  Rendered products/edit.html.erb within layouts/application (55.8ms)
+Completed 200 OK in 1079ms (Views: 244.2ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/products/2" for 127.0.0.1 at 2018-10-17 21:06:25 -0400
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"be0wqCKpUPvpxj9uIYpaRbgYtKnw45TZC0Mwheg42Fmx0xfq1Zz9T4tKc/2u9hlNxnoKZ/adFj23TcmnmB/Phg==", "product"=>{"title"=>"3D Crow", "price"=>"20.0", "description"=>"A crow created in Blender by yours truly!", "condition"=>"Like-new", "image"=>#<ActionDispatch::Http::UploadedFile:0xcb06358 @tempfile=#<Tempfile:C:/Users/Keyyva/AppData/Local/Temp/RackMultipart20181017-12156-1n5s7zd.png>, @original_filename="Crow Preview.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"Crow Preview.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Product", "id"=>"2"}
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (19.0ms)
+  Rendered products/edit.html.erb within layouts/application (46.9ms)
+Completed 200 OK in 1141ms (Views: 235.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-17 21:06:28 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY created_at desc[0m
+  Rendered products/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 211ms (Views: 179.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2018-10-17 21:07:11 -0400
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (16.0ms)
+  Rendered products/new.html.erb within layouts/application (45.9ms)
+Completed 200 OK in 285ms (Views: 225.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-10-17 21:07:21 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY created_at desc[0m
+  Rendered products/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 208ms (Views: 176.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-17 21:08:38 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.0ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY created_at desc[0m
+  Rendered products/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 215ms (Views: 186.5ms | ActiveRecord: 0.0ms)
+
+
